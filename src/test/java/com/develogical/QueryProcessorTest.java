@@ -34,4 +34,11 @@ public class QueryProcessorTest {
     public void whichOfTheNumberIsTheLargest(){
         assertThat(queryProcessor.process("cf764c60: which of the following numbers is the largest: 857, 23, 80, 1000"), containsString("1000"));
     }
+
+    @Test
+    public void whatIsTheSum(){
+        assertThat(queryProcessor.process("e2cc7c00: What is 10 plus 8"), containsString("18"));
+    }
+
+
 }
