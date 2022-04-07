@@ -32,6 +32,6 @@ public class QueryProcessorTest {
 
     @Test
     public void whichOfTheNumberIsTheLargest(){
-        assertThat(queryProcessor.process("which of the numbers is the largest: 80, 444"), containsString("444"));
+        assertThat(queryProcessor.process("cf764c60: which of the following numbers is the largest: 857, 23, 80, 1000"), containsString("1000"));
     }
 }
