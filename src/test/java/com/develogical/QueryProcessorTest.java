@@ -29,4 +29,9 @@ public class QueryProcessorTest {
     public void whatIsYourNameToReturnSomething() {
         assertThat(queryProcessor.process("what is your name"), containsString("Something!"));
     }
+
+    @Test
+    public void whichOfTheNumberIsTheLargest(){
+        assertThat(queryProcessor.process("which of the numbers is the largest: 80, 444"), containsString("444"));
+    }
 }
